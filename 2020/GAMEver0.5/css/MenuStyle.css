@@ -1,0 +1,296 @@
+input {
+	display: block;
+	box-sizing: border-box;
+}
+
+li {
+	cursor: cell;
+}
+
+button{
+	cursor: pointer;
+}
+div,ul,li,span,input{
+	cursor: pointer;
+}
+#GameTitle {
+	width: 100%;
+	height: 40px;
+	top: 0;
+	background: url(../img/bg10.png);
+	background-size: cover;
+	position: fixed;
+	text-align: center;
+	font-size: 30px;
+	color: ghostwhite;
+	display: none;
+	
+}
+
+#gameover {
+	background: url(../img/GameOver.png);
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	display: none;
+}
+
+#HeiMu {
+	width: 100%;
+	height: 100%;
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	opacity: 0;
+	z-index: 999;
+}
+
+#endTxt {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+}
+
+#endTxt>p {
+	color: ghostwhite;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+}
+
+#StartMenu,
+#MainMenu,
+#Statu,
+#Equipment,
+#monsterMessage {
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	/*filter: (opacity:30);*/
+}
+
+#Statu,
+#Equipment {
+	background: url(../img/DecorativeTile.png);
+	background-size: cover;
+}
+
+#StartMenu {
+	background: url(../img/Sky.png);
+	background-size: cover;
+}
+
+#monsterMessage {
+	background: url(../img/DarkSpace.png);
+	background-size: cover;
+}
+
+#GameStart {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 260px;
+	height: 80px;
+	background: rgba(0,0,0,0);
+	border: none;
+	font-size: 40px;
+	line-height: 80px;
+	text-align: center;
+	color: red;
+}
+#MainMenu {
+	display: none;
+	background: url(../img/DemonicWorld1.png);
+	background-size: cover;
+}
+
+#MainMenu>input {
+	margin: 60px auto;
+	width: 100px;
+	height: 40px;
+	border: 5px dashed green;
+	background: yellow;
+}
+
+#MainMenu>input:first-child {
+	margin-top: 100px;
+}
+
+#Statu,
+#monsterMessage {
+	display: none;
+}
+
+#Statu>ul,
+#Equipment>ul,
+#monsterMessage>ul {
+	display: block;
+	margin: 80px auto;
+	width: 400px;
+	height: 400px;
+	background: url(../img/bg1.png);
+	padding: 20px;
+	overflow: hidden;
+}
+
+audio {
+	display: none;
+}
+
+#Statu>ul>li,
+#Equipment>ul>li,
+#monsterMessage>ul>li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	font-size: 30px;
+	font-family: '宋体';
+	font-weight: bold;
+	color: ghostwhite;
+	list-style: none;
+	text-align: center;
+	position: relative;
+	background: url(../img/map.png);
+}
+
+#monsterMessage>ul>li>span {
+	font-size: 16px;
+	display: block;
+	float: left;
+}
+
+#monsterMessage>ul>li:first-child>span {}
+
+#Equipment {
+	display: none;
+}
+
+#Statu>ul>li:nth-child(1) {
+	margin-top: 40px;
+}
+
+#Statu>ul>li:nth-child(7)>input,
+#Equipment>ul>li:last-child>input {
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 30px;
+	font-family: '宋体';
+	font-weight: bold;
+	color: ghostwhite;
+	border: none;
+	background: url(../img/bg4.png);
+}
+
+#Equipment>ul>li>span {
+	display: block;
+	height: 24px;
+	width: 24px;
+	float: left;
+	background: url(../img/IconSet.png);
+	top: 8px;
+	left: 100px;
+	position: absolute;
+}
+
+#Equipment>ul>li>span.IceShoes {
+	background-position: -144px -672px;
+}
+
+#Equipment>ul>li>span.YinJian {
+	background-position: -72px -216px;
+}
+
+#Equipment>ul>li>span.BaoHumo {
+	background-position: -360px -24px;
+}
+
+#Equipment>ul>li>span.MonsterBook {
+	background-position: -120px -168px;
+}
+
+#Equipment>ul>li>span.TianshiHane {
+	background-position: 0 -504px;
+}
+
+#Equipment>ul>li>span.NvZhuang {
+	background-position: -168px -648px;
+}
+
+#Equipment>ul>li>span.Ha {
+	background-position: 0 -336px;
+}
+
+#Statu>ul>li:nth-child(7)>input:first-child,
+#Equipment>ul>li:last-child>input:first-child {
+	margin-left: 80px;
+}
+
+#Statu span {
+	display: block;
+	float: left;
+	width: 50px;
+	height: 100%;
+	text-align: center;
+}
+
+#equipTips {
+	width: 200px;
+	padding: 10px;
+	height: 100px;
+	background: url(../img/bg3.png);
+	background-size: cover;
+	display: none;
+	position: absolute;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 600;
+	font-size: 16px;
+	color: ghostwhite;
+	z-index: 9999;
+}
+
+#monsterMessage>ul>li>span {
+	font-size: 16px;
+	display: block;
+	float: left;
+}
+
+#monsterMessage>ul>li>span:first-child {
+	margin-top: 5px;
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+}
+
+#monsterMessage>ul>li>span {
+	width: 60px;
+	margin-left: 10px;
+}
+
+#monsterMessage>ul>li>span:nth-child(2) {
+	margin-left: 40px;
+}
+
+#monsterMessage>ul>li:first-child>span {
+	width: 60px;
+	margin-top: 0;
+	margin-left: 10px;
+}
+
+#monsterMessage>ul>li:first-child>span:nth-child(2) {
+	margin-left: 30px;
+}

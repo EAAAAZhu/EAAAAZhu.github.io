@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js飞机游戏</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="contentdiv">
+		<div id="startdiv">
+			<button onclick="begin()">开始游戏</button>
+		</div>
+		<div id="playdiv">
+			<div id="scorediv">
+				<label>分数：</label>
+				<label id="label">0</label>
+			</div>
+			<div id="pausediv">
+				<button>继续</button><br>
+				<button onclick="jixu()">重新开始</button><br>
+				<button onclick="jixu()">返回主页</button>
+			</div>
+			<div id="enddiv">
+				<p>飞机大战分数</p>
+				<p id="playscore">0</p>
+				<button onclick="jixu()">继续</button>
+			</div>
+		</div>
+	</div>
+	<script src='js/two.js'></script>
+</body>
+</html>

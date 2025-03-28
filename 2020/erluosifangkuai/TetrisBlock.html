@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>俄罗斯方块</title>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<body>
+	<div id="bg">
+		<div id="open"></div>
+	</div>
+    <div id="wrapper">
+
+    	<audio id="a" src=""></audio>
+
+		<canvas id="myCanvas" width="300" height="450"><span>浏览器不支持canvas</span></canvas>
+		<div id="tips">
+
+			<div class="minimap"><canvas id="newBlock" width="100" height="100"></canvas></div>
+
+			<p class="scores">得分：<span id="scores">0</span></p>
+
+			<div class="control">
+	            <p class="title">游戏操作</p>
+	                <ul>
+	                    <li class="key left">左移：A</li>
+
+	                    <li class="key right">右移：D</li>
+
+	                    <li class="key transfer">变换：W</li>
+
+	                    <li class="key">加速下降：S</li>
+
+	                    <li class="keytit">开始/重玩：ENTER</li>
+
+	                </ul>
+	            </p>
+	        </div>
+        </div>
+<!-- <script src="main.js"></script> -->
+<script src="require.js" data-main="./js/main"></script>
+<script>
+
+
+// window.onload=function (){
+
+// 	oOpen.onclick=open;
+// }
+
+</script>
+</body>
+</html>

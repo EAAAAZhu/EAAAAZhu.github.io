@@ -1,0 +1,61 @@
+    var message01 = '<span class="Face01"></span><div class="MesTxt">我是谁？</div>';
+		var message02 = '<span class="Face01"></span><div class="MesTxt">这是哪里？</div>';
+		var message03 = '<span class="Face01"></span><div class="MesTxt">我在干什么？</div>';
+		var message04 = '<span class="Face01"></span><div class="MesTxt">头好痛</div>';
+		var message05 = '↑、↓、←、→键控制人物移动，X键查看菜单，靠近宝箱时按Z键打开。----按X键继续游戏';
+		oMessage.style.display = 'block';
+		oMessage.innerHTML = message01;
+		startMove(oMessage, {
+			opacity: 100
+		}, 30, function() {
+			startMove(oMessage, {
+				opacity: 0
+			}, 10, function() {
+				oMessage.innerHTML = message02;
+				startMove(oMessage, {
+					opacity: 100
+				}, 30, function() {
+					startMove(oMessage, {
+						opacity: 0
+					}, 10, function() {
+						oMessage.innerHTML = message03;
+						startMove(oMessage, {
+							opacity: 100
+						}, 30, function() {
+							startMove(oMessage, {
+								opacity: 0
+							}, 10, function() {
+								oMessage.innerHTML = message04;
+								startMove(oMessage, {
+									opacity: 100
+								}, 30, function() {
+									startMove(oMessage, {
+										opacity: 0
+									}, 10, function() {
+										oGetItem.innerHTML = message05;
+										oGetItem.style.display = 'block';
+										startMove(oGetItem, {
+											opacity: 100
+										}, 30, function() {
+											onkeydown = function(ev) {
+												var oEvent = ev || event;
+												if(oEvent.keyCode == 88) {
+													startMove(oGetItem, {
+														opacity: 0
+													}, 10, function() {
+														oGetItem.style.display = 'none';
+														oMessage.style.display = 'none';
+													});
+												}
+											}
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});
+	}
+}

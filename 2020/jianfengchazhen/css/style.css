@@ -1,0 +1,156 @@
+body {
+	background: url('../images/bg1.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+canvas {
+	cursor: pointer;
+	/*background-color: #aaa;*/
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	width: 52px;
+	height: 43px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 43px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+#fail {
+	width: 200px;
+	height: 80px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, .4);
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	left: 200px;
+	display: none;
+	color:#fff;
+}
+
+#success {
+	width: 200px;
+	height: 100px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, .4);
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	left: 220px;
+	display: none;
+	color:#fff;
+}
+
+#success h3 {
+	line-height: 60px;
+	text-shadow: 2px -2px 2px #f00;
+}
+
+#success .btn {
+	padding: 0;
+	margin-bottom: 5px;
+	font-size: 12px;
+	width: 26px;
+	height: 16px;
+	color:#000;
+}
+
+h3,
+p,ul,h5{
+	margin: 0;
+	padding: 0;
+}
+
+#fail h3 {
+	line-height: 50px;
+}
+
+#fail p {
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+
+.myStyle{
+	width: 150px;
+	height: 180px;
+	margin: 25px;
+	padding-top: 50px;
+	padding-left: 10px;
+	background: url('../images/note3.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border: 1px solid #efefef;
+	position:relative;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.27);
+}
+ .myStyle:before{
+	content:'';
+	position:absolute;
+	z-index: -2;
+	width: 65%;
+	height: 80%;
+	left:25px;
+	bottom:3px;
+	background:#fff;
+	box-shadow:10px 8px 20px rgba(0,0,0,0.6);
+	transform:skew(-21deg) rotate(-4deg);
+} 
+.myStyle:after{
+	content:'';
+	position:absolute;
+	z-index: -2;
+	width: 65%;
+	height: 80%;
+	right:25px;
+	bottom:3px;
+	background:#fff;
+	box-shadow:10px 8px 20px rgba(0,0,0,0.6);
+	transform:skew(21deg) rotate(4deg);
+} 
+.myStyle #le{
+	width:32px;
+	height: 45px;
+	/*border:1px solid #f00;*/
+	text-align: center;
+	line-height: 45px;
+	font-size: 35px;
+	position:absolute;
+	top:10px;
+	left:105px;
+	text-shadow: 2px 1px 2px #b28850;
+}
+.myStyle .nav li {
+	width: 10px;
+	height: 10px;
+	float: left;
+	background: #219bd9;
+}
+
+.myStyle .nav li:nth-child(2) {
+	background: yellow;
+}
+
+.myStyle .nav li:nth-child(3) {
+	background: #3a2363;
+}
+
+.myStyle .nav li:nth-child(4) {
+	background: pink;
+}
+
+.myStyle .nav li:last-child {
+	background: #898fac;
+}
+
+.myStyle .color li#color1 {
+	background: #000;
+}

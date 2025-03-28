@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>神秘领域</title>
+		<link rel="stylesheet" type="text/css" href="css/GameBoxStyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/MenuStyle.css"/>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<audio controls id="bgSoundOP">
+			<source src="sound/Music boxLey-Line of Twilight time.mp3" type="audio/mpeg"> 您的浏览器不支持 audio 元素。
+		</audio>
+		<audio controls id="bgSound01">
+			<source src="sound/Victory.mp3" type="audio/mpeg"> 您的浏览器不支持 audio 元素。
+		</audio>      
+		<audio controls id="bgSound">
+			<source src="sound/おてんば恋娘.mp3" type="audio/mpeg"> 您的浏览器不支持 audio 元素。
+		</audio>
+		<div id="GameTitle"></div>
+		<div id="HeiMu">
+			<div id="endTxt">
+				<p>然而</p>
+				<p>勇者李狗蛋的冒险并没有结束</p>
+				<p>在这之后</p>
+				<p>会是什么样的冒险在等着他呢</p>
+				<p>敬请期待，不知道叫什么的大冒险2</p>
+				<p>（不存在的）</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+				<p>+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s+1s</p>
+			</div>
+		</div>
+		<div id="gameover"></div>
+		<canvas id="canvas01" width="" height="">您的浏览器不支持canvas标签！</canvas>
+		<!--<div id="StartMenu">-->
+			<input type="button" id="GameStart" value="开始游戏" />
+		<!--</div>-->
+		<div id="MainMenu">
+			<input type="button" value="回到游戏" />
+			<input type="button" value="查看状态" />
+			<input type="button" value="查看怪物信息" />
+			<input type="button" value="查看装备" />
+			<input type="button" value="重新开始" />
+		</div>
+		<ul id="yxbox"></ul>
+		<div id="Statu">
+			<ul>
+				<li><span>LV:</span><span id='lv'></span></li>
+				<li><span>HP:</span><span id="hp"></span><span id="mhp"></span></li>
+				<li><span>MP:</span><span id="mp"></span><span id="mmp"></span></li>
+				<li><span>ATK:</span><span id='atk'></span></li>
+				<li><span>DEF:</span><span id='def'></span></li>
+				<li><span>EXP:</span><span id="exp"></span><span id="nexp"></span></li>
+				<li><input type="button" value="返回菜单" /><input type="button" value="返回游戏" /></li>
+			</ul>
+		
+		</div>
+		<div id="Equipment">
+			<ul>
+				<li>未拥有</li>
+				<li>未拥有</li>
+				<li>未拥有</li>
+				<li>未拥有</li>
+				<li>未拥有</li>
+				<li>未拥有</li>
+				<li><input type="button" value="返回菜单" /><input type="button" value="返回游戏" /></li>
+			</ul>
+		</div>
+		<div id="monsterMessage">
+			<ul>
+				<li><span>怪物</span><span>生命值</span><span>攻击</span><span>防御</span><span>经验值</span></li>
+			</ul>
+		</div>
+		<div id="getItem"></div>
+		<div id="Messages">
+			<span class="Face01"></span>
+			<div class="MesTxt"></div>
+		</div>
+		<div id="equipTips"></div>
+		<script src="js/variable.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/MyFun.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/MouseFunction.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/KeyFunction.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/CreateMap01.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			
+			
+		</script> 
+	</body>
+</html>

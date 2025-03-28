@@ -1,0 +1,7 @@
+function playTimes(elem, times) {
+    var start = 0;
+    elem.addEventListener("ended",function() {
+        start++;
+        start == times && elem.pause();
+    });
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>见缝插针</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-full">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="myStyle">
+                    <h5>背景图片:</h5>
+                   <ul class="nav" id="changBg">
+                       <li id="bg1"></li>
+                       <li id="bg2"></li>
+                       <li id="bg3"></li>
+                       <li id="bg4"></li>
+                       <li id="bg5"></li>
+                   </ul>
+                   <h5>大圆颜色:</h5>
+                   <ul class="nav color" id='centerColor'>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+                   <h5>小圆的样式:</h5>
+                   <ul class="nav nail" id='nailColor'>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+                   <div id="le"><strong>1</strong></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <canvas id="canvas" width="500px" height="620px">
+                    你的浏览器不支持canvas!
+                </canvas>
+            </div>
+            <div class="col-md-2">
+                <ul>
+                    <li id="start"><img src="images/love1.png"></li>
+                    <li id="insert" disabled><img src="images/love2.png"></li>
+                    <li id="reset"><img src="images/love3.png"></li>
+                </ul>
+                <!-- <button type="button" class="btn btn-info btn-sm" id="start">开始</button>
+                <br/><br/>
+                <button type="button" class="btn btn-primary btn-sm" id="insert" >插入</button>
+                <br/><br/>
+                <button type="button" class="btn btn-danger btn-sm" id="reset">重置</button> -->
+            </div>
+        </div>
+    </div>
+    <div id='fail'>
+        <h3>挑战失败！</h3>
+        <p>最后得分：</p>
+    </div>
+    <div id="success">
+        <h3>恭喜闯关成功！</h3>
+        <p>是否进入下一关？</p>
+        <input type="button" class="btn yes" value="Yes" name="">
+        <input type="button" class="btn no" value="No" name="">
+    </div>
+    <script type="text/javascript" src='js/jquery-1.11.1.js'></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

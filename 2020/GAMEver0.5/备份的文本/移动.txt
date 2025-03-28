@@ -1,0 +1,30 @@
+//	setInterval(function(){
+//		if(oPLeft) {
+//			Json.oP.className = 'person2';
+//			Json.personRun({
+//				x: -1,
+//				y: 0
+//			});
+//		}
+//		if(oPUp) {
+//			Json.oP.className = 'person1';
+//			Json.personRun({
+//				x: 0,
+//				y: -1
+//			});
+//		}
+//		if(oPRight) {
+//			Json.oP.className = 'person4';
+//			Json.personRun({
+//				x: 1,
+//				y: 0
+//			});
+//		}
+//		if(oPDown) {
+//			Json.oP.className = 'person3';
+//			Json.personRun({
+//				x: 0,
+//				y: 1
+//			});
+//		}
+//	},10);

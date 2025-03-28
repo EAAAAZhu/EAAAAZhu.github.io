@@ -1,0 +1,234 @@
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			background-image: url('../img/bg10.png');
+			background-position: 0 0;
+			background-repeat: repeat;
+		}
+		
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+		}
+		
+		canvas {
+			display: block;
+			background: black;
+		}
+		
+		#yxbox {
+			padding: 0;
+			margin: 40px auto;
+			margin-top: 32px;
+			list-style: none;
+			position: relative;
+			display: none;
+		}
+		
+		#yxbox li {
+			width: 32px;
+			height: 32px;
+			float: left;
+		}
+		
+		#yxbox .pos0 {
+			background: url('../img/Inside_A2.png') no-repeat;
+			background-position: 0 -288px;
+		}
+		
+		#yxbox .pos1 {
+			background: url('../img/Inside_A2.png') no-repeat;
+			background-position: -320px -192px;
+		}
+		
+		#yxbox .pos2 {
+			background: url('../img/Inside_A2.png') no-repeat;
+			background-position: -128px -192px;
+			;
+		}
+		
+		#yxbox .pos3 {
+			background: url('../img/Inside_A2.png') no-repeat;
+			background-position: -128px -288px;
+		}
+		
+		#yxbox .pos4 {
+			background: url('../img/Dungeon_A1.png') no-repeat;
+			background-position: -270px -240px;
+		}
+		
+		#yxbox .pos5 {
+			background: url('../img/Switch1.png') no-repeat;
+			background-position: 0 -226px;
+		}
+		
+		#yxbox .pos6 {
+			background: url('../img/Dungeon_B.png') no-repeat;
+			background-position: -270px -50px;
+		}
+		
+		#yxbox .pos10 {
+			background: url('../img/World_A2.png') no-repeat;
+			background-position: -32px 0;
+		}
+		/*#yxbox .pos11 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: 0 0;
+		}
+		
+		#yxbox .pos12 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: -128px 0;
+		}
+		
+		#yxbox .pos13 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: -224px 0;
+		}*/
+		
+		.pos11 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: 0 0;
+		}
+		
+		.pos12 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: -128px 0;
+		}
+		
+		.pos13 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: -224px 0;
+		}
+		
+		.pos14 {
+			background: url('../img/Monster1.png') no-repeat;
+			background-position: -224px -128px;
+		}
+		
+		#yxbox .person1,
+		#yxbox .person2,
+		#yxbox .person3,
+		#yxbox .person4 {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			background-image: url('../img/People4.png');
+			background-repeat: no-repeat;
+		}
+		
+		#yxbox .box {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			background-image: url('../img/Other1.png');
+			background-position: 0 0;
+			background-repeat: no-repeat;
+		}
+		
+		#yxbox .equip01,
+		#yxbox .equip02 {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			background-image: url('../img/Chest.png');
+			background-position: 0 0;
+			background-repeat: no-repeat;
+		}
+		
+		#yxbox .equip02 {
+			background-position: 0 -96px;
+		}
+		
+		#yxbox .item01 {
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			background-image: url('../img/Other1.png');
+			background-position: -256px -128px;
+			background-repeat: no-repeat;
+		}
+		
+		#yxbox .person1 {
+			/*↑*/
+			background-position: -224px -96px;
+		}
+		
+		#yxbox .person2 {
+			/*←*/
+			background-position: -224px -32px;
+		}
+		
+		#yxbox .person3 {
+			/*↓*/
+			background-position: -224px 0px;
+		}
+		
+		#yxbox .person4 {
+			/*→*/
+			background-position: -224px -64px;
+		}
+		
+		#getItem {
+			width: 100%;
+			height: 50px;
+			position: fixed;
+			background: url(../img/bg2.png);
+			background-size: cover;
+			line-height: 50px;
+			font-size: 20px;
+			font-weight: bold;
+			color: ghostwhite;
+			list-style: none;
+			text-align: center;
+			display: none;
+			opacity: 0;
+			top: 260px;
+			z-index: 9999;
+		}
+		
+		#Messages {
+			width: 100%;
+			height: 120px;
+			position: fixed;
+			padding: 20px 20px 0;
+			bottom: 0;
+			background: url(../img/bg3.png);
+			background-size: cover;
+			display: none;
+			opacity: 0;
+			z-index: 999;
+		}
+		
+		#Messages>span.Face01,
+		#Messages>span.Face02 {
+			display: block;
+			width: 96px;
+			height: 96px;
+			margin: 2px;
+			margin-left: 10%;
+			float: left;
+			background: url(../img/Faces/Actor1.png);
+			background-position: -192px 0;
+		}
+		
+		#Messages>span.Face02 {
+			background: url(../img/Faces/Evil.png);
+			background-position: -288px 0;
+		}
+		
+		#Messages>.MesTxt {
+			height: 100px;
+			width: 60%;
+			margin-left: 5%;
+			font-size: 20px;
+			font-weight: bold;
+			color: ghostwhite;
+			list-style: none;
+			text-align: center;
+			float: left;
+		}

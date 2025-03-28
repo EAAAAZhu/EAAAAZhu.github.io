@@ -1,0 +1,17 @@
+//CSS Document
+body{margin: 0;background: #ccc;}
+canvas,input{margin: 0;padding: 0;}
+#wrapper{width: 502px;overflow: hidden;position: absolute;left: 400px;top: 60px;display: none;}
+#myCanvas{background: #000;border: 1px solid #fff;float: left;box-sizing: border-box;}
+#tips{width: 200px;height: 450px;float: left;/*border: 1px solid #fff;*/box-sizing: border-box;border-left: none;color: #fff;background: #000;}
+#newBlock{border:1px solid #ECEA12;margin-left: 26px;padding: 20px;}
+.minimap{margin-top: 30px;}
+.scores{line-height: 20px;font-size: 16px;color:#ECEA12;margin-left: 26px;font-weight: bold; }
+.control ul{margin:0;padding: 0;list-style: none;}
+.title{line-height: 40px;font-size: 20px;color:#ECEA12;margin-left: 26px;font-weight: bold; }
+.control ul li{font-size: 16px;color:#ECEA12;font-weight: bold;line-height: 30px;margin-left: 26px;}
+
+/* 后期样式修改 */
+#bg{width: 650px;height: 380px;padding: 100px; background: url(img/bg.jpg) no-repeat;background-size:contain;margin: 20px auto 0;position: relative;}
+
+#open{width: 76px;height: 76px; background: url(img/btn1.gif) no-repeat;background-size: contain; position: absolute;top: 13px;right: 32px;cursor: pointer;}

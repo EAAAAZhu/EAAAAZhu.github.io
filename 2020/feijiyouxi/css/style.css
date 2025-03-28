@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+.contentdiv{
+	position:absolute;
+	left:500px;
+}
+#startdiv{
+	width: 320px;
+	height: 568px;
+	background: url('../image/ksbj.png') no-repeat;
+	
+}
+#startdiv button{
+	position: absolute;
+	display:block;
+	width: 120px;
+	height: 30px;
+	line-height:30px;
+	text-align:center;
+	bottom: 35px;
+	left:50%;
+	transform:translateX(-50%);
+	background: #c4c9ca;
+	border-radius: 20px;
+	outline:none;
+	font:14px '微软雅黑';
+	border: 1px solid #333;
+}
+
+/* playdiv */
+#playdiv{
+	width: 320px;
+	height: 568px;
+	background: url('../image/background_1.png');
+	display:none; 
+}
+#scorediv{
+	padding:10px 0 0 20px;
+}
+#scorediv label{
+	font:700 18px '微软雅黑';
+	line-height:30px;
+}
+#pausediv{
+	width: 130px;
+	height: 120px;
+	position: absolute;
+	top:190px;
+	left:85px;
+	z-index:2;
+	display:none; 
+}
+#pausediv button{
+	width: 130px;
+	height: 30px;
+	line-height:30px;
+	text-align:center;
+	background: #c4c9ca;
+	border-radius: 20px;
+	outline:none;
+	font:14px '微软雅黑';
+	border: 1px solid #333;
+	margin-top: 10px;
+}
+/* 编辑js中的图片样式 */
+#playdiv img{
+	position: absolute;
+	z-index:1;
+}
+
+
+/* enddiv */
+#enddiv{
+	width: 160px;
+	height: 140px;
+	text-align:center;
+	border:1px solid #888;
+	background: #d7ddde;
+	border-radius:5px;
+	top:190px;
+	left:80px;
+	z-index:2;
+	position: absolute;
+	display:none;
+}
+#enddiv p{
+	width: 100%;
+	height: 40px;
+	border-bottom:1px solid #888;
+	font:bold 18px '微软雅黑';
+	margin:0;
+	padding:5px;
+	box-sizing: border-box;
+	
+}
+#enddiv #playscore{
+	height: 60px;
+	line-height:50px;
+}
+#enddiv button{
+	width: 90px;
+	height: 30px;
+	line-height:30px;
+	text-align:center;
+	background: #dde8ea;
+	border-radius: 20px;
+	outline:none;
+	font:14px '微软雅黑';
+	border: 1px solid #888;
+	margin:5px 0;
+}
