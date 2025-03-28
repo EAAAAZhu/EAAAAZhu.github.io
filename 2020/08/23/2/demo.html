@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>打字小游戏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style>
+    body{
+		margin:0;
+		background:url(img/game.jpg) no-repeat;
+		background-size:cover;
+		font-family: "幼圆";
+		background:#E8F0F0;
+		overflow:hidden;
+	   }
+	 .screen{
+	   	width:100%;
+		height:100%;
+		background:url(img/dz2.jpg) no-repeat;
+		background-size:cover;
+		margin:0 auto; padding:0;
+		position:relative;overflow:hidden;
+	   }
+    #over{
+    width:130px;
+		height:50px;
+		background:red;
+		text-align:center;
+		cursor: pointer;
+		background:url("img/stop.png");
+		background-size:130px 50px;
+		line-height:50px;
+		color:#392112;
+		font-size:16px;
+		z-index:6666666;
+		font-weight:bold;
+		position: absolute;
+		bottom:50px;
+		left:50px;
+    }
+    #begin{
+    width:130px;
+		height:50px;
+		background:red;
+		text-align:center;
+		cursor: pointer;
+		background:url("img/stop.png");
+		background-size:130px 50px;
+		line-height:50px;
+		color:#392112;
+		font-size:16px;
+		z-index:6666666;
+		font-weight:bold;
+		position: absolute;
+		bottom:50px;
+		left:200px;
+    }
+   .score{
+	background:url('img/fs.png') no-repeat;
+	background-size: 150px 180px ;
+    width:150px;
+    height:180px;
+    position:absolute;
+    right:35px;
+    bottom:60px;
+    color:"#522E1A";
+    font-size:60px;
+    line-height:140px;
+    text-align:center;
+   }
+   .stage{
+    position:absolute;
+    top:-50%;
+    bottom:0;right:0;left:0;   
+    width:520px;
+    height:400px;
+    background-size:contain ;
+    margin:auto;
+    border-radius:5%;
+    animation:cg 2s linear;
+   }
+   .success{
+   	display: none;
+   	 background:url('img/cg.png') no-repeat;
+   }
+   .fail{
+   	 background:url('img/sp1.png') no-repeat;
+   	  display:none;
+   }
+   .letter{
+   	   width:100px;
+   	   height:100px;
+   	   position:absolute;
+   	   top:0px;
+   	   left:0px;
+   }
+    @keyframes cg {
+		0%{
+			transform:translateY(-50%);
+		}100%{
+			transform:translateY(0%);
+		}
+	}
+	@keyframes cgfont {
+		0%{
+			transform:scale(0,0);
+		}100%{
+			transform:scale(1,1);
+		 }
+	}
+	span{
+		color:transparent;
+	}
+	.first,.second,.third{
+	cursor: pointer;
+	width:130px;
+	height:50px;
+    position:absolute;
+    right:100px;
+    background:url("img/stop.png");
+    background-size:130px 50px;
+	line-height:50px;
+	color:#392112;
+	font-size:16px;
+	z-index:6666666;
+	font-weight:bold;
+	text-align:center;
+	}
+	.first{
+	top:200px;
+	}
+	.second{
+    top:250px;
+	}
+    .third{
+    top:300px;
+     } 
+	</style>
+</head>
+<body>
+    <div class='screen'>
+        <div class='stage success'>
+        </div>
+        <div class='stage fail'></div>
+        <div class='score'><audio id='throw1' preload>
+         <source src='sound/throw.mp3'>
+         <source src='sound/throw.ogg'>
+        </audio>0</div>
+        <div id='over'>
+        <audio id='audio' preload>
+         <source src='sound/boom.mp3'>
+         <source src='sound/boom.ogg'>
+        </source>
+         </source>
+        </audio>结束游戏</div>
+        <div id='begin'>开始游戏</div>
+        <div class='first' id='first'>初级玩家</div>
+        <div class='second' id='second'>中级玩家</div>
+        <div class='third' id='third'>高级玩家</div>
+    </div>
+	<script src='typegame.js'></script>
+</body>
+</html>
