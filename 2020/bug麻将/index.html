@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/game.js"></script>
+		<style>
+			.table{
+				margin: auto;
+				width: 900px;
+				height: 600px;
+				background-image: url(img/backgroud.jpg);
+				background-position: 0px -130px;
+				background-repeat: no-repeat;
+			}
+			#frontPlayer
+			{
+				margin: auto;
+				width: 700px;
+				height: 75px;
+			}
+			#frontPlayer img{
+				width: 43px;
+			}
+			#leftPlayer{
+				width: 100px;
+				height: 450px;
+				float: left;
+			}
+			#leftPlayer img{
+				margin: -1px;
+				margin-left: 80px;
+				vertical-align: top;}
+			#playcard{
+				margin-left: 70px;
+				width: 460px;
+				height: 400px;
+				float: left;
+			}
+			#playcard img{
+				height: 55px;
+				width: 43;
+				float: left;
+			}
+			#rightPlayer{
+				margin-left: 80px;
+				width: 15px;
+				height: 450px;
+				float: left;
+			}
+			#rightPlayer img{
+				margin: -1px;
+				vertical-align: top;}
+			#mySelf{
+				clear: both;
+				margin: auto;
+				width: 700px;
+				height: 75px;
+			}
+			#mySelf div{
+				float: left;
+				margin-bottom: 0px;
+			}
+			#mySelf img{
+				width: 43px;
+				height: 55px;
+				margin-left: -2px;
+			}
+		</style>
+	</head>
+	<body onload="start()">
+		<div class="table">
+			<div id="frontPlayer">
+			</div>
+			<div id="leftPlayer">
+			</div>
+			<div id="playcard">
+			</div>
+			<div id="rightPlayer">
+			</div>
+			<div id="mySelf">
+				<div id="tongzi"></div>
+				<div id="tiaozi"></div>
+				<div id="wanzi"></div>
+				<div id="fengzi"></div>
+				<div id="zhongfabai"></div>
+			</div>
+		</div>
+	</body>
+</html>
